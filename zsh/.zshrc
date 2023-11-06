@@ -107,5 +107,11 @@ alias tf="terraform"
 alias tg="terragrunt"
 alias ll="exa -la"
 alias l="exa -la"
+alias ls="exa"
+alias cat="bat"
+alias reload="source ~/.zshrc"
+alias privateip="hostname -I"
+alias publicip="curl icanhazip.com"
+alias dot="cd ~/dotfiles"
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
