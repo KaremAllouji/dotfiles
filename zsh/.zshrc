@@ -73,7 +73,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,9 +105,9 @@ source $ZSH/oh-my-zsh.sh
 
 alias tf="terraform"
 alias tg="terragrunt"
-alias ll="exa -la"
-alias l="exa -la"
-alias ls="exa"
+alias ll="eza -la"
+alias l="eza -la"
+alias ls="eza"
 alias cat="bat"
 alias reload="source ~/.zshrc"
 alias privateip="hostname -I"
@@ -115,3 +115,5 @@ alias publicip="curl icanhazip.com"
 alias dot="cd ~/dotfiles"
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.zprofile ]] || source ~/.zprofile
+
