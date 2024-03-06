@@ -42,6 +42,7 @@ cd ~/dotfiles && brew bundle
 
 ## TODO List
 
+- save iterm2 colors
 - insert the following in bootstrap script
 ```zsh
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions

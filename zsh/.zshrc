@@ -13,6 +13,13 @@ export ZSH="$HOME/.oh-my-zsh"
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+# GO Workspace
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
+
+# python
+eval "$(pyenv virtualenv-init -)"
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -113,7 +120,14 @@ alias reload="source ~/.zshrc"
 alias privateip="hostname -I"
 alias publicip="curl icanhazip.com"
 alias dot="cd ~/dotfiles"
+alias rtl="cd ~/repos/rtl-tec-gitlab/"
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 [[ ! -f ~/.zprofile ]] || source ~/.zprofile
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/alloujim/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/alloujim/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/alloujim/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/alloujim/google-cloud-sdk/completion.zsh.inc'; fi
